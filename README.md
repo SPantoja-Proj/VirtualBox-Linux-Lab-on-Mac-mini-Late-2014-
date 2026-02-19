@@ -9,29 +9,6 @@ This repository documents how to set up **Linux Mint**, **Ubuntu**, and **Kali L
 
 ## Table of contents
 
-- [1. Prerequisites](#1-prerequisites)
-  - [1.1 Check Mac mini hardware](#11-check-mac-mini-hardware)
-  - [1.2 Install VirtualBox](#12-install-virtualbox)
-  - [1.3 Download Linux ISOs](#13-download-linux-isos)
-- [2. Common VirtualBox configuration](#2-common-virtualbox-configuration)
-  - [2.1 Create a new VM](#21-create-a-new-vm)
-  - [2.2 Storage and ISO attachment](#22-storage-and-iso-attachment)
-  - [2.3 Network settings](#23-network-settings)
-- [3. Linux Mint VM setup](#3-linux-mint-vm-setup)
-  - [3.1 Recommended VM settings](#31-recommended-vm-settings)
-  - [3.2 Install Linux Mint](#32-install-linux-mint)
-  - [3.3 Post‑install tweaks](#33-post-install-tweaks)
-- [4. Ubuntu VM setup](#4-ubuntu-vm-setup)
-  - [4.1 Recommended VM settings](#41-recommended-vm-settings)
-  - [4.2 Install Ubuntu](#42-install-ubuntu)
-  - [4.3 Post‑install tweaks](#43-post-install-tweaks)
-- [5. Kali Linux VM setup](#5-kali-linux-vm-setup)
-  - [5.1 Recommended VM settings](#51-recommended-vm-settings)
-  - [5.2 Install Kali Linux](#52-install-kali-linux)
-  - [5.3 Post‑install tweaks](#53-post-install-tweaks)
-- [6. VirtualBox Guest Additions](#6-virtualbox-guest-additions)
-- [7. Snapshots and backups](#7-snapshots-and-backups)
-- [8. GitHub usage for this repo](#8-github-usage-for-this-repo)
 
 ---
 
@@ -141,3 +118,82 @@ After logging in:
 - **Update system:**
   ```bash
   sudo apt update && sudo apt upgrade -y
+  ```
+
+## 4. Ubuntu VM Setup
+
+### 4.1 Recommended VM Settings
+
+- **Name:** `Ubuntu-VM`
+- **Type:** Linux
+- **Version:** Ubuntu (64‑bit)
+- **Base Memory:** 4096 MB (or more if available)
+- **Processors:** 2–4 (depending on Mac mini resources)
+- **Video Memory:** 128 MB
+- **Graphics Controller:** VMSVGA
+- **Storage:** 40–60 GB dynamically allocated VDI
+
+### 4.2 Install Ubuntu
+
+1. Start the `Ubuntu-VM` in VirtualBox.
+2. Select **Try or Install Ubuntu**.
+3. Choose **Install Ubuntu**.
+4. Follow the installer prompts:
+   - Keyboard layout
+   - **Normal installation** (recommended)
+   - Installation type: **Erase disk and install Ubuntu**  
+     *(This only affects the virtual disk, not your Mac.)*
+   - Timezone
+   - Create your user account
+5. When installation completes, click **Restart Now**.
+6. When prompted, remove the ISO:
+   - Devices → Optical Drives → Remove disk from virtual drive
+
+### 4.3 Post‑Install Tweaks
+
+Update the system:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+---
+
+# ✅ **Kali Linux VM Setup 
+
+## 5. Kali Linux VM Setup
+
+### 5.1 Recommended VM Settings
+
+- **Name:** `Kali-VM`
+- **Type:** Linux
+- **Version:** Debian (64‑bit) or Ubuntu (64‑bit)
+- **Base Memory:** 4096–8192 MB
+- **Processors:** 2–4
+- **Video Memory:** 128 MB
+- **Graphics Controller:** VMSVGA
+- **Storage:** 40–60 GB dynamically allocated VDI
+
+### 5.2 Install Kali Linux
+
+1. Start the `Kali-VM`.
+2. Select **Graphical Install**.
+3. Complete the setup steps:
+   - Language, location, keyboard
+   - Network configuration (hostname, domain optional)
+   - Create user and password
+4. Partitioning:
+   - Choose **Guided – use entire disk**
+   - Confirm partition changes
+5. Install the base system and tools.
+6. When installation finishes, reboot and remove the ISO:
+   - Devices → Optical Drives → Remove disk from virtual drive
+
+### 5.3 Post‑Install Tweaks
+
+Update Kali:
+
+```bash
+sudo apt update && sudo apt full-upgrade -y
+```
+
