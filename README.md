@@ -1,5 +1,8 @@
 # VirtualBox Linux Lab on Mac mini (Late 2014)
 
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+
+
 This repository documents how to set up **Linux Mint**, **Ubuntu**, and **Kali Linux** as virtual machines using **VirtualBox** on a **Mac mini (Late 2014)**.
 
 > Target hardware: Mac mini (Late 2014), Intel CPU, macOS (10.13+ recommended)  
