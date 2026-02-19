@@ -9,6 +9,30 @@ This repository documents how to set up **Linux Mint**, **Ubuntu**, and **Kali L
 
 ## Table of contents
 
+- [1. Prerequisites](#1-prerequisites)
+  - [1.1 Check Mac mini Hardware](#11-check-mac-mini-hardware)
+  - [1.2 Install VirtualBox](#12-install-virtualbox)
+  - [1.3 Download Linux ISOs](#13-download-linux-isos)
+
+- [2. Common VirtualBox Configuration](#2-common-virtualbox-configuration)
+  - [2.1 Create a New VM](#21-create-a-new-vm)
+  - [2.2 Storage and ISO Attachment](#22-storage-and-iso-attachment)
+  - [2.3 Network Settings](#23-network-settings)
+
+- [3. Linux Mint VM Setup](#3-linux-mint-vm-setup)
+  - [3.1 Recommended VM Settings](#31-recommended-vm-settings)
+  - [3.2 Install Linux Mint](#32-install-linux-mint)
+  - [3.3 Post‑Install Tweaks](#33-post-install-tweaks)
+
+- [4. Ubuntu VM Setup](#4-ubuntu-vm-setup)
+  - [4.1 Recommended VM Settings](#41-recommended-vm-settings)
+  - [4.2 Install Ubuntu](#42-install-ubuntu)
+  - [4.3 Post‑Install Tweaks](#43-post-install-tweaks)
+
+- [5. Kali Linux VM Setup](#5-kali-linux-vm-setup)
+  - [5.1 Recommended VM Settings](#51-recommended-vm-settings)
+  - [5.2 Install Kali Linux](#52-install-kali-linux)
+  - [5.3 Post‑Install Tweaks](#53-post-install-tweaks)
 
 ---
 
